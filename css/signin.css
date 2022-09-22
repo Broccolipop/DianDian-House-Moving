@@ -1,0 +1,81 @@
+body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: url('https://i.ibb.co/xYk9tdJ/drya-01.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.login{
+    position: fixed;
+    left: 47.2%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 30px;
+    font-family: 微軟正黑體;
+    border-radius: 20px;
+}
+
+input[type="text"]{
+    font-size: 20px;
+    font-family: 微軟正黑體;
+    padding: 10px;
+    padding-right: 70px;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    border-style: solid;
+    border-color: rgb(153,213, 236);
+}
+
+input[type="password"]{
+    font-size: 20px;
+    font-family: 微軟正黑體;
+    padding: 10px;
+    padding-right: 70px;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    border-style: solid;
+    border-color: rgb(153,213, 236);
+}
+
+button{
+    border: 10;
+    padding: 8px 50px;
+    font-size: 20px;
+    font-family: 微軟正黑體;
+    background-color: rgb(220, 239, 246);
+    color: rgb(38, 123, 180);
+    border-radius: 10px;
+    border-style: none;
+    margin-left: 80px;
+    margin-top: 40px;
+    /* border-style: solid;
+    border-color: rgb(21, 121, 188); */
+    width: 165px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(38, 123, 180);
+}
+
+.signup{
+    position: absolute;
+    bottom: 155px;
+    left: 775px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(153,213, 236);
+    font-size: 14px;
+    margin-bottom: 5px;
+    border-bottom:1.5px rgb(114, 180, 206) solid; padding-bottom:1px; 
+   
+}
+

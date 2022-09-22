@@ -1,0 +1,156 @@
+*{font-family: 微軟正黑體;}
+
+body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: url('https://i.ibb.co/CHsNsvw/signup-1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+form{
+    position: relative;
+    top: 120px;
+    left: -30px;
+    max-width: 350px;
+   letter-spacing: 5px;
+    margin: 5% auto;
+    padding: 25px 20px;
+}
+
+
+
+form label{
+    line-height: 35px;
+    display: inline-block;
+    width: 120px;
+    
+}
+
+form input[type=name]{
+    width: 208px;
+    height: 15px;
+    font-size: 16px;
+    padding: 10px;
+    padding-right: 50px;
+    border-radius: 15px;
+    margin: -3px auto;
+    display: block;
+    width: 100%;
+    border-style: solid;
+    border-color: rgb(153,213, 236);
+}
+
+form input[type=email]{
+    width: 208px;
+    height: 15px;
+    font-size: 16px;
+    padding: 10px;
+    padding-right: 50px;
+    border-radius: 15px;
+    margin: -3px auto;
+    display: block;
+    width: 100%;
+    border-style: solid;
+    border-color: rgb(153,213, 236);
+    
+}
+
+form input[type=text]{
+    width: 208px;
+    height: 15px;
+    font-size: 16px;
+    padding: 10px;
+    padding-right: 50px;
+    border-radius: 15px;
+    margin: -3px auto;
+    display: block;
+    width: 100%;
+    border-style: solid;
+    border-color: rgb(153,213, 236);
+}
+
+form input[type=address]{
+    width: 208px;
+    height: 15px;
+    font-size: 16px;
+    padding: 10px;
+    padding-right: 50px;
+    border-radius: 15px;
+    margin: -3px auto;
+    display: block;
+    width: 100%;
+    border-style: solid;
+    border-color: rgb(153,213, 236);
+}
+
+form input[type=password]{
+    width: 208px;
+    height: 15px;
+    font-size: 16px;
+    padding: 10px;
+    padding-right: 50px;
+    border-radius: 15px;
+    margin: -3px auto;
+    display: block;
+    width: 100%;
+    border-style: solid;
+    border-color: rgb(153,213, 236);
+}
+
+/* form input[type=button]{
+    position: absolute;
+    left: 252px;
+    width: 180px;
+    height: 40px;
+    font-weight: 600;
+    background-color: rgb(38, 123, 180);
+    border-style: solid;
+    border-color: rgb(38, 123, 180);
+    color:rgb(255, 255, 255);
+    padding: 3px 30px;
+    margin: 10px auto;
+    border-radius: 15px;
+    font-size: 16px;
+} */
+
+button{
+    position: absolute;
+    left: 252px;
+    width: 180px;
+    height: 40px;
+    font-weight: 600;
+    background-color: rgb(38, 123, 180);
+    border-style: solid;
+    border-color: rgb(38, 123, 180);
+    padding: 3px 30px;
+    margin: 0px auto;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    
+}
+
+form input[type=reset]{
+    position: absolute;
+    left: 0px;
+    width: 180px;
+    height: 40px;
+    font-weight: 600;
+    background-color:  rgb(255, 255, 255);
+    border-style: solid;
+    border-color: rgb(153,213, 236);
+    color:rgb(38, 123, 180);
+    padding: 3px 30px;
+    margin: 0px 20px;
+    border-radius: 15px;
+    font-size: 16px;
+}
+

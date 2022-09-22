@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電電搬家中</title>
+    <link rel="stylesheet" href="./css/onepage.css">
+    <link rel="stylesheet" href="./js/test.js">
+
+    <script src="js/slider.js" type="text/javascript"></script>
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+     
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <!-- jQuery Modal -------------------------------------------------------------------------------------------------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+    <!-- 下拉選單連結-------------------------------------------------------------------------------------------------------------------->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"  rel="stylesheet"   type="text/css">
+        <script type = "text/javascript" src = "https://www.gstatic.com/charts/loader.js">
+        </script>
+
+    <!-- 長條圖1 -------------------------------------------------------------------------------------------------------------------->
+    <script type="text/javascript">
+        google.charts.load("current", {packages:["corechart"]});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ["Element", "Density", { role: "style" } ],
+        ["去年同期", 482, "#6DC2A5"],
+        ["本期", 468, "#45B035"],
+        ["去年下期", 474, "F0E900"],
+       
+      ]);
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
+      var options = {
+        title: "",
+        width: 550,
+        height: 250,
+        bar: {groupWidth: "50%"},
+        legend: { position: "none" },
+        backgroundColor:'transparent',
+      };
+      var chart = new google.visualization.BarChart(document.getElementById("barchart_values"));
+      chart.draw(view, options);
+      }
+       </script>
+
+    <!-- 長條圖2 -------------------------------------------------------------------------------------------------------------------->
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["Element", "Density", { role: "style" } ],
+        ["去年同期", 327, "#6DC2A5"],
+        ["本期", 235, "#45B035"],
+        ["去年下期", 267, "F0E900"],
+       
+      ]);
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
+      var options = {
+        title: "",
+        width: 550,
+        height: 250,
+        bar: {groupWidth: "50%"},
+        legend: { position: "none" },
+        backgroundColor:'transparent',
+      };
+      var chart = new google.visualization.BarChart(document.getElementById("barchart_values2"));
+      chart.draw(view, options);
+     }
+      </script>
+
+
+    <!-- 長條圖3 -------------------------------------------------------------------------------------------------------------------->
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["Element", "Density", { role: "style" } ],
+        ["去年同期", 3.2, "#6DC2A5"],
+        ["本期", 1.8, "#45B035"],
+        ["去年下期", 2.6, "F0E900"],
+       
+      ]);
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
+      var options = {
+        title: "",
+        width: 550,
+        height: 250,
+        bar: {groupWidth: "50%"},
+        legend: { position: "none" },
+        backgroundColor:'transparent',
+      };
+      var chart = new google.visualization.BarChart(document.getElementById("barchart3"));
+      chart.draw(view, options);
+      }
+     </script>
+
+
+    <!-- 長條圖4 -------------------------------------------------------------------------------------------------------------------->
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["Element", "Density", { role: "style" } ],
+        ["去年同期", 0.66, "#6DC2A5"],
+        ["本期", 0.16, "#45B035"],
+        ["去年下期", 0.47, "F0E900"],
+       
+      ]);
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
+      var options = {
+        title: "",
+        width: 550,
+        height: 250,
+        bar: {groupWidth: "50%"},
+        legend: { position: "none" },
+        backgroundColor:'transparent',
+      };
+      var chart = new google.visualization.BarChart(document.getElementById("barchart4"));
+      chart.draw(view, options);
+      }
+  </script>
+
+   <!-- 甜甜圈1 -------------------------------------------------------------------------------------------------------------------->
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['再生',        6],
+          ['抽蓄',      1.4],
+          ['汽電',      1.8],
+          ['核能',      13.4],
+          ['火力',      77.4]
+        ]);
+
+        var options = {
+          title: '',
+          pieHole: 0.6,
+          backgroundColor:'transparent',
+           slices: {0: {color: '#ED726D'}, 1:{color: '#4679BD'}, 2:{color: '#3591D0'}, 3: {color: '#32ABE3'}, 4:{color: '#BAE3F9'}}
+         
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+
+   <!-- 甜甜圈2 -------------------------------------------------------------------------------------------------------------------->
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['生質能',    0.9],
+          ['風力',      12.9],
+          ['垃圾沼氣',  19.5],
+          ['太陽能',    28.2],
+          ['水力',      39.3],
+        ]);
+
+        var options = {
+          title: '',
+          pieHole: 0.6,
+          backgroundColor:'transparent',
+          slices: {0: {color: '#DB1D21'}, 1:{color: '#E94A49'}, 2:{color: '#EC6D6E'}, 3: {color: '#F08D8E'}, 4:{color: '#F7C1C1'}}
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart2'));
+        chart.draw(data, options);
+      }
+    </script>
+
+
+
+</head>
+
+
+
+<body>
+     
+    <nav class="navbar">
+       <!-- navbarlogo -------------------------------------------------------------------------------------------------------------------->
+        <div class="logo">
+            <img class="mainlogo" src="./svg/logoo.svg" alt="" width="80px" height="80px">
+            <i class="far fa-smile fa-2x"></i>
+            <div class="logo-name">電電搬家中</div>
+        </div>
+
+       <!-- navbar功能列 -------------------------------------------------------------------------------------------------------------------->
+        <ul class="luu">
+            <li><a id="p1" class="test1">關於電</a></li>
+            <li><a id="p2" class="test2">電器控制資訊</a></li>
+            <li><a id="p3" class="test3">電費單</a></li>
+            <li><a id="p4" class="test4">耗能排名</a></li>
+            <li><a id="p5" class="test5">發電結構</a></li>
+        </ul>
+
+        <!-- 個人資料 -------------------------------------------------------------------------------------------------------------------->
+        <div class="logo">
+            <img class="peo" src="./img/peo-01.png" alt="" width="42px" height="42px">
+            <i class="far fa-smile fa-2x"></i>
+            <div class="logo-name2">王曉明</div>
+            <a class="siout" href="./signout.html"></a>
+         </div>
+
+      </nav>
+
+         <!-- nav滑動連結navbar功能列id-------------------------------------------------------------------------------------------------------------------->
+            <script language = "JavaScript">
+
+            $(document).ready(function() {
+            $("#p1").click(function() {
+            $("html, body").animate({
+            scrollTop: $("#q").offset().top }, {duration: 500,easing: "swing"});
+            return false;
+            });
+
+            $("#p2").click(function() {
+            $("html, body").animate({
+            scrollTop: $("#w").offset().top }, {duration: 500,easing: "swing"});
+            return false;
+            });
+
+            $("#p3").click(function() {
+            $("html, body").animate({
+            scrollTop: $("#e").offset().top }, {duration: 500,easing: "swing"});
+            return false;
+            });
+            });
+
+            $("#p4").click(function() {
+            $("html, body").animate({
+            scrollTop: $("#r").offset().top }, {duration: 500,easing: "swing"});
+            return false;
+            });
+            
+            $("#p5").click(function() {
+            $("html, body").animate({
+            scrollTop: $("#t").offset().top }, {duration: 500,easing: "swing"});
+            return false;
+            });
+
+            $("a[href='#top']").click(function() {
+            $("html, body").animate({ scrollTop: 0 ,behavior: 'smooth'} );
+            return false;
+            });
+          
+            </script>
+
+    <!-- 動畫上層各物件 -------------------------------------------------------------------------------------------------------------------->
+    <header class="dd">
+
+            <div class="house">
+              <img src="./svg/6.svg" alt="">
+            </div>
+   
+            <div class="dian">
+              <img src="./svg/dd.svg" alt="">
+            </div>
+   
+            <div class="igloo">
+              <img src="./svg/3.svg" alt="" >
+            </div>
+   
+            <div class="f1">
+             <img src="./img/shrimp2.png" alt="" width="170px" height="170px">
+            </div>
+   
+            <div class="f2">
+             <img src="./img/SHRIMP.png" alt="" width="120px" height="120px">
+            </div>
+
+            <div class="chat1"><img src="./svg/chat1.svg" alt=""></div>
+
+            <div class="chat2"><img src="./svg/chat2.svg" alt=""></div>
+    
+      </header>
+
+    <!-- 線上支付 -------------------------------------------------------------------------------------------------------------------->
+            <div class="pay"><img src="./svg/pay.svg" alt="" width="135px" height="135px"></div>
+   
+  
+    <!-- 關於電content -------------------------------------------------------------------------------------------------------------------->
+    <div class="main">
+         <!--日週月年-->
+            <div class="butt1"></div>
+            <div class="butt2"></div>
+            <div class="butt3"></div>
+            <div class="butt4"></div>
+         <!-- 滑動定位點 -------------------------------------------------------------------------------------------------------------------->
+            <div id="q"></div>
+            <div id="w"></div>
+            <div id="e"></div>
+            <div id="r"></div>
+            <div id="t"></div>
+            <div id="z"></div>
+         <!-- 度數折線圖chart1 -------------------------------------------------------------------------------------------------------------------->
+           <div class="chart1">
+              <img src="./svg/度數chart.svg" alt="">
+         
+              <p class="charttext2">時</p>
+
+              <p class="date1">12月03日</p>
+          
+         <!-- 月曆icon -------------------------------------------------------------------------------------------------------------------->
+               <span class="calender1"><img src="./svg/calender.svg " alt="">
+          
+                 <!-- 度數月曆按鈕 -------------------------------------------------------------------------------------------------------------------->
+                 <p class="ww"><a href="#ex1" rel="modal:open">Oi</a></p>
+
+                 <!-- Modal HTML embedded directly into document -------------------------------------------------------------------------------------------------------------------->
+                  <div id="ex1" class="modal" >
+  
+                  <a  href="#" rel="modal:close">
+                   <div class="calendarrrr">
+
+                   <div class="month-indicator">
+                     <time datetime="2019-02">  2020 12月 </time>
+                   </div>
+                   <div class="day-of-week">
+                     <div>Su</div>
+                     <div>Mo</div>
+                     <div>Tu</div>
+                     <div>We</div>
+                     <div>Th</div>
+                     <div>Fr</div>
+                     <div>Sa</div>
+                   </div>
+                   <div class="date-grid">
+                   <button>
+                     <time datetime="2019-02-01">1</time>
+                   </button>
+                   <button>
+                     <time datetime="2019-02-02">2</time>
+                   </button>
+                   <button>
+                     <time datetime="2019-02-03">3</time>
+                   </button>
+                   <button>
+                     <time datetime="2019-02-04">4</time>
+                   </button>
+                   <button>
+                     <time datetime="2019-02-05">5</time>
+                   </button>
+                   <button>
+                     <time datetime="2019-02-06">6</time>
+                   </button>
+                   <button>
+                     <time datetime="2019-02-07">7</time>
+                   </button>
+                   <button>
+                     <time datetime="2019-02-08">8</time>
+                   </button>
+                   <button>
+                     <time datetime="2019-02-09">9</time>
+                   </button>
+                   <button>
+                     <time datetime="2019-02-10">10</time>
+                   </button>
+                   <button>
+                     <time datetime="2019-02-11">11</time>
+                   </button>
+                   <button>
+                     <time datetime="2019-02-12">12</time>
+                   </button>
+                   <button>
+                     <time datetime="2019-02-13">13</time>
+                   </button>
+                   <button>
+                     <time datetime="2019-02-14">14</time>
+                   </button>
+                   <button>
+                     <time datetime="2019-02-15">15</time>
+                   </button>
+                   <button>
+                     <time datetime="2019-02-16">16</time>
+                   </button>
+                   <button>
+                     <time datetime="2019-02-17">17</time>
+                   </button>
+                   <button>
+                     <time datetime="2019-02-18">18</time>
+                   </button>
+                   <button>
+                     <time datetime="2019-02-19">19</time>
+                   </button>
+                   <button>
+                     <time datetime="2019-02-20">20</time>
+                   </button>
+                   <button>
+                     <time datetime="2019-02-21">21</time>
+                   </button>
+                   <button>
+                     <time datetime="2019-02-22">22</time>
+                   </button>
+                  <button>
+                     <time datetime="2019-02-23">23</time>
+                  </button>
+                  <button>
+                     <time datetime="2019-02-24">24</time>
+                  </button>
+                  <button>
+                     <time datetime="2019-02-25">25</time>
+                  </button>
+                  <button>
+                     <time datetime="2019-02-26">26</time>
+                  </button>
+                  <button>
+                     <time datetime="2019-02-27">27</time>
+                  </button>
+                  <button>
+                     <time datetime="2019-02-28">28</time>
+                 </button>
+            </div>
+
+           </div></a>
+            
+           </div>
+          
+            </span>
+
+          <!-- 金額折線左邊數值 -------------------------------------------------------------------------------------------------------------------->
+                  <span class="fk1">0</span>
+                  <span class="fk2">5</span>
+                  <span class="fk3">10</span>
+                  <span class="fk4">15</span>
+                  <span class="fk5">20</span>
+                  <span class="fk6">25</span>
+                  <span class="fk7">30</span>
+
+          <!-- 隱形切換鍵 -------------------------------------------------------------------------------------------------------------------->
+                  <ul class="tab-list4">
+                     <li class="tab-item4 active4"></li>
+                     <li class="tab-item4"></li>
+                   </ul>
+
+          <!-- tab-item4切換內容 -------------------------------------------------------------------------------------------------------------------->
+            <ul class="content-list4">
+            
+             <!-- 度數計算 -------------------------------------------------------------------------------------------------------------------->
+             <li class="content-item4 show4">
+                <p class="charttext1">度</p>
+             <!-- 度數折線圖語法 -------------------------------------------------------------------------------------------------------------------->
+
+             <div id = "container2" style = "width: 550px; height: 400px; margin: 0 auto"></div>
+
+             <script language = "JavaScript">
+             function drawChart() {
+             // Define the chart to be drawn.
+             var data = new google.visualization.DataTable();
+             data.addColumn('number', '');
+             data.addColumn('number', '度數');
+             //   data.addColumn('number', 'The Avengers');
+             //   data.addColumn('number', 'Transformers: Age of Extinction');
+
+             data.addRows([
+             [8,  13.68 ],
+             [9,  16.57  ],
+             [10,  23.75 ],
+             [11,  25.91 ],
+             [12,  28.36 ],
+             [13,   26.10],
+             [14,  20.89 ],
+       
+             ]);
+         
+             // Set chart options
+             var options = {'title' : ' ',
+             hAxis: {
+             title: ''
+             },
+             vAxis: {
+             title: ''
+             },   
+             'width':720,
+             'height':400,
+             'backgroundColor':'transparent'
+             };
+
+             // Instantiate and draw the chart.
+             var chart = new google.visualization.LineChart(document.getElementById('container2'));
+             chart.draw(data, options);
+             }
+             google.charts.setOnLoadCallback(drawChart);
+             </script>
+             </li>
+           
+           
+             <!-- 金額計算 -------------------------------------------------------------------------------------------------------------------->
+              <li class="content-item4"> 
+
+              <p class="charttext02">元</p>
+
+             <!--金額折線圖語法 -------------------------------------------------------------------------------------------------------------------->
+              <div id = "container" style = "width: 550px; height: 400px; margin: 0 auto"></div>
+
+              <script language = "JavaScript">
+              function drawChart() {
+              // Define the chart to be drawn.
+              var data = new google.visualization.DataTable();
+              data.addColumn('number', '');
+              data.addColumn('number', '金額');
+              //   data.addColumn('number', 'The Avengers');
+              //   data.addColumn('number', 'Transformers: Age of Extinction');
+
+              data.addRows([
+              [8,  7.6 ],
+              [9,  10.8  ],
+              [10,  18.7 ],
+              [11,  24.4 ],
+              [12,  26.7 ],
+              [13,   27.7],
+              [14,  22.7 ],
+       
+              ]);
+         
+             // Set chart options
+              var options = {'title' : ' ',
+              hAxis: {
+              title: ''
+              },
+              vAxis: {
+              title: ''
+              },   
+             'width':720,
+             'height':400,
+             'backgroundColor':'transparent'
+              };
+
+               // Instantiate and draw the chart.
+              var chart = new google.visualization.LineChart(document.getElementById('container'));
+              chart.draw(data, options);
+              }
+              google.charts.setOnLoadCallback(drawChart);
+             </script>
+             </li>
+             </ul>
+           
+           <!-- 切換js -->
+               <script>
+                $(function() {
+                $('.tab-item4').click(function() {
+                var index = $('.tab-item4').index(this);
+                $('.active4').removeClass('active4');
+                $(this).addClass('active4');
+                $('.content-item4').removeClass('show4').eq(index).addClass('show4');
+                });
+                });
+              </script>
+
+         </div>
+
+         
+            <!-- co2折線圖chart2  -------------------------------------------------------------------------------------------------------------------->
+
+              <!-- 碳排標題 -------------------------------------------------------------------------------------------------------------------->
+              <div class="co2title">
+                <img src="./svg/co2title.svg" alt="">
+                <p class="co2titletext">碳排放量計算</p>
+              </div>
+
+              <!-- 碳排折線圖 -------------------------------------------------------------------------------------------------------------------->
+              <div class="chart2">
+                <img src="./svg/co2chart.svg" alt="">
+
+                <div class="date"><img src="./svg/date.svg" alt="">
+                <div class="butt1"></div>
+                <div class="butt2"></div>
+                <div class="butt3"></div>
+                <div class="butt4"></div>
+                
+              </div>
+         
+
+              <div class="date22">
+                <img src="./svg/date.svg" alt="" >
+              </div>
+
+              <p class="charttext3">公斤</p>
+           
+              <p class="charttext4">時</p>
+
+              <p class="date2">12月03日</p>
+          
+              <!-- 月曆icon -------------------------------------------------------------------------------------------------------------------->
+              <span class="calender2"><img src="./svg/calender.svg " alt=""></span>
+          
+
+              <!-- 折線圖語法 -------------------------------------------------------------------------------------------------------------------->
+              <div id = "container5" style = "width: 550px; height: 400px; margin: 0 auto"></div>
+               <script language = "JavaScript">
+                function drawChart() {
+                // Define the chart to be drawn.
+                var data = new google.visualization.DataTable();
+                data.addColumn('number', '');
+                data.addColumn('number', '度數');
+                //   data.addColumn('number', 'The Avengers');
+                //   data.addColumn('number', 'Transformers: Age of Extinction');
+
+                data.addRows([
+                [8,  0.82 ],
+                [9,  0.96  ],
+                [10, 1.54 ],
+                [11,  1.82 ],
+                [12,  1.96],
+                [13,   1.85 ],
+                [14,   1.66 ],
+
+                ]);
+         
+                // Set chart options
+               var options = {'title' : ' ',
+               hAxis: {
+               title: ''
+               },
+               vAxis: {
+               title: ''
+               },   
+               'width':720,
+               'height':400,
+               'backgroundColor':'transparent'
+               };
+
+               // Instantiate and draw the chart.
+               var chart = new google.visualization.LineChart(document.getElementById('container5'));
+               chart.draw(data, options);
+               }
+               google.charts.setOnLoadCallback(drawChart);
+
+             </script>
+          
+             </div>
+
+          
+            <!-- 圈圈 -------------------------------------------------------------------------------------------------------------------->
+            <div class="circle">
+              <img src="./svg/ccircle-01.svg" alt="">
+             <div class="light">
+               <img src="./svg/light010.svg" alt="">
+             </div>
+             <div class="lighttitle">
+               <img src="./svg/light-02.svg" alt="">
+             </div>
+            
+
+            <!-- 輸入數值maodal -------------------------------------------------------------------------------------------------------------------->
+             <div class="modal-container">
+
+                  <input id="modal-toggle" type="checkbox">
+                  
+                    <!-- 背景 -------------------------------------------------------------------------------------------------------------------->
+                    <div class="modal-backdrop">
+                    
+                      <!-- 對話框 -------------------------------------------------------------------------------------------------------------------->
+                      <div class="modal-content">
+
+                        <label class="modal-close" for="modal-toggle"></label>
+                        <p class="pp">預估當月度數</p>
+   
+                        <form class="pp2">
+                          請輸入度數：<input type="text" name="欄位名稱">
+                        </form>
+                       
+                        <div class="glt">使用0% - 80% 顯示綠燈</div> 
+                        <div class="ylt">使用81% - 99% 顯示黃燈</div> 
+                        <div class="rlt">使用100% 以上 顯示紅燈</div> 
+
+                         <div class="lightlight">
+
+                       <div class="glight">
+                         <img src="./svg/greenlight-01.svg" alt="">
+                         
+                       </div>
+
+                       <div class="ylight">
+                        <img src="./svg/yellowlight-02.svg" alt="">
+                      </div>
+
+                      <div class="rlight">
+                        <img src="./svg/redlight-03.svg" alt="">
+                      </div>
+
+                      </div>
+
+                      <label class="modal-close button" for="modal-toggle">確定</label>
+                        </div>
+
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+
+              <!-- 各電器 -->
+              <!-- 電器折線背景 -------------------------------------------------------------------------------------------------------------------->
+               <div class="choice"><img src="./svg/choice.svg" alt="">
+               
+             <!-- 各電器折線左邊數值 -------------------------------------------------------------------------------------------------------------------->
+                  <span class="fk8">0</span>
+                  <span class="fk9">2</span>
+                  <span class="fk10">4</span>
+                  <span class="fk11">6</span>
+                  <span class="fk12">8</span>
+                  <span class="fk13">10</span>
+                  <span class="fk14">12</span>
+         
+             <!-- 隱形切換鍵 -------------------------------------------------------------------------------------------------------------------->
+                 <ul class="tab-list">
+                   <li class="tab-item active"></li>
+                   <li class="tab-item"></li>
+                  </ul>
+                 
+                 <!-- tab-list內容 -------------------------------------------------------------------------------------------------------------------->
+                 <ul class="content-list">
+
+                   <!-- 各電器度數切換 -------------------------------------------------------------------------------------------------------------------->
+                   <li class="content-item show"> 
+
+                   <div class="choitext10">度</div>
+                    <div id = "container6" style = "width: 550px; height:     400px; margin: 0 auto"></div>
+ 
+                   <script language = "JavaScript">
+                    function drawChart() {
+                    // Define the chart to be drawn.
+                    var data = new google.visualization.DataTable();
+                    data.addColumn('number', '');
+                    data.addColumn('number', '度數');
+                    //   data.addColumn('number', 'The Avengers');
+                    //   data.addColumn('number', 'Transformers: Age of Extinction');
+  
+                    data.addRows([
+                    [8,  5.6 ],
+                    [9,  4.18  ],
+                    [10,  9.63 ],
+                    [11,  8.48 ],
+                    [12,  10.24 ],
+                    [13,   6.5 ],
+                    [14,   7.76 ],
+       
+                    ]);
+          
+                   // Set chart options
+                   var options = {'title' : ' ',
+                   hAxis: {
+                   title: ''
+                   },
+                   vAxis: {
+                   title: ''
+                   },   
+                   'width':750,
+                   'height':500,
+                   'backgroundColor':'transparent'
+                   };
+ 
+                    // Instantiate and draw the chart.
+                    var chart = new google.visualization.LineChart(document.getElementById('container6'));
+                    chart.draw(data, options);
+                    }
+                    google.charts.setOnLoadCallback(drawChart);
+                   </script>
+                    </li>
+
+                   <!-- 各電器金額切換 -------------------------------------------------------------------------------------------------------------------->
+                    <li class="content-item"> 
+                    <div class="choitext12">元</div>
+                    <div id = "container7" style = "width: 550px; height:     400px; margin: 0 auto"></div>
+
+                    <script language = "JavaScript">
+                      function drawChart() {
+                      // Define the chart to be drawn.
+                      var data = new google.visualization.DataTable();
+                      data.addColumn('number', '');
+                      data.addColumn('number', '度數');
+                      //   data.addColumn('number', 'The Avengers');
+                      //   data.addColumn('number', 'Transformers: Age of Extinction');
+
+                      data.addRows([
+                      [8,  8.6 ],
+                      [9,  7.88  ],
+                      [10,  10.63 ],
+                      [11,  9.48 ],
+                      [12,  11.24 ],
+                      [13,   8.5 ],
+                      [14,   10.16 ],
+       
+                      ]);
+         
+                      // Set chart options
+                      var options = {'title' : ' ',
+                      hAxis: {
+                      title: ''
+                       },
+                      vAxis: {
+                      title: ''
+                       },   
+                     'width':750,
+                     'height':500,
+                     'backgroundColor':'transparent'
+                       };
+
+                      // Instantiate and draw the chart.
+                      var chart = new google.visualization.LineChart(document.getElementById('container7'));
+                      chart.draw(data, options);
+                      }
+                       google.charts.setOnLoadCallback(drawChart);
+                      </script>
+                      </li>
+  
+                   </ul>
+
+               
+                 <!-- 各電氣切換js -------------------------------------------------------------------------------------------------------------------->
+                   <script>
+                     $(function() {
+                     $('.tab-item').click(function() {
+                     var index = $('.tab-item').index(this);
+                     $('.active').removeClass('active');
+                     $(this).addClass('active');
+                     $('.content-item').removeClass('show').eq(index).addClass('show');
+                     });
+                     });
+                   </script>
+
+              </div>
+
+
+             <!-- 各電器開關標題 -------------------------------------------------------------------------------------------------------------------->
+              <div class="choicetitle">
+                  <img src="./svg/choicetitle.svg" alt="">
+                  <p class="choicetitletext">各電器控制開關</p>
+                  </div>
+
+            
+                  <div class="date223"><img src="./svg/date.svg" alt=""></div>
+
+            
+                  <div class="choitext2">時</div>
+                  <div class="choitext3">12月3日</div>
+
+                  <div class="coical"><img src="./svg/calender.svg" alt="">
+             
+              </div>
+
+
+             <!-- 碳排放月曆modal -------------------------------------------------------------------------------------------------------------------->
+            <p class="ww2"><a href="#ex1" rel="modal:open">Oi</a></p>
+             <!-- 各電器月曆modal -------------------------------------------------------------------------------------------------------------------->
+            <p class="ww3"><a href="#ex1" rel="modal:open">Oi</a></p>
+
+            
+               <!-- 下拉選單 -------------------------------------------------------------------------------------------------------------------->
+                <ul id="accordion" class="accordion">
+                   <li>
+                     <div class="link">客廳
+                       <i class="fa fa-chevron-down"></i></div>
+
+                     <ul class="submenu">
+                        <li><a href="#">主燈</a></li>
+                        <li><a href="#">板層燈</a></li>
+                        <li><a href="#">電風扇1</a></li>
+                      </ul>
+
+                   </li>
+
+                   <li>
+                    <div class="link">廚房<i class="fa fa-chevron-down"></i>
+                    </div>
+                    
+                        <ul class="submenu">
+                           <li><a href="#">冰箱</a></li>
+                           <li><a href="#">抽油煙機</a></li>
+                           <li><a href="#">電鍋</a></li>
+                        </ul>
+                   </li>
+
+                   <li>
+                     <div class="link">主臥室<i class="fa fa-chevron-down"></i>
+                    </div>
+
+                          <ul class="submenu">
+                              <li><a href="#">主燈</a></li>
+                              <li><a href="#">電風扇</a></li>
+                              <li><a href="#">冷氣</a></li>
+                          </ul>
+                   </li>
+
+                   <li>
+                      <div class="link">臥室1<i class="fa fa-chevron-down"></i>
+                      </div>
+
+                          <ul class="submenu">
+                            <li><a href="#">主燈</a></li>
+                            <li><a href="#">電風扇</a></li>
+                            <li><a href="#">冷氣</a></li>
+                          </ul>
+                   </li>
+                </ul>
+
+               
+           <!-- 下拉選單js -------------------------------------------------------------------------------------------------------------------->
+              <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+                <script>
+                  $(function() {
+	                var Accordion = function(el, multiple) {
+	               	this.el = el || {};
+	              	this.multiple = multiple || false;
+
+	               	// Variables privadas
+               		var links = this.el.find('.link');
+	              	// Evento
+	              	links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+                	}
+
+                 	Accordion.prototype.dropdown = function(e) {
+	               	var $el = e.data.el;
+	            		$this = $(this),
+	            		$next = $this.next();
+
+		              $next.slideToggle();
+	               	$this.parent().toggleClass('open');
+
+	              	if (!e.data.multiple) {
+	            		$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+              		};
+                	}	
+
+                	var accordion = new Accordion($('#accordion'), false);
+                   });
+
+                 </script>
+
+
+                <script type="text/javascript">
+
+                   var _gaq = _gaq || [];
+                  _gaq.push(['_setAccount', 'UA-36251023-1']);
+                  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+                  _gaq.push(['_trackPageview']);
+
+                  (function() {
+                   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                   })();
+
+                  </script>
+
+
+
+
+               <div class="choice2"><img src="./svg/choice2.svg" alt=""></div>
+                 
+
+               <!-- <script src="js/index.js"></script> -->
+
+          
+               </div>
+
+            <!-- switch開關 -------------------------------------------------------------------------------------------------------------------->
+            <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0">
+                <label class="onoffswitch-label" for="myonoffswitch">
+                  <span class="onoffswitch-inner"></span>
+                  <span class="onoffswitch-switch"></span>
+                </label>
+             </div>  
+       
+            <div class="onoffswitch1">
+                <input type="checkbox" name="onoffswitch1" class="onoffswitch-checkbox1" id="myonoffswitch1" tabindex="0">
+                <label class="onoffswitch-label1" for="myonoffswitch1">
+                   <span class="onoffswitch-inner1"></span>
+                   <span class="onoffswitch-switch1"></span>
+                </label>
+             </div>
+  
+             <div class="onoffswitch2">
+                <input type="checkbox" name="onoffswitch2" class="onoffswitch-checkbox2" id="myonoffswitch2" tabindex="0">
+                <label class="onoffswitch-label2" for="myonoffswitch2">
+                  <span class="onoffswitch-inner2"></span>
+                  <span class="onoffswitch-switch2"></span>
+                 </label>
+             </div>
+
+             <div class="onoffswitch3">
+                <input type="checkbox" name="onoffswitch3" class="onoffswitch-checkbox3" id="myonoffswitch3" tabindex="0">
+                <label class="onoffswitch-label3" for="myonoffswitch3">
+                  <span class="onoffswitch-inner3"></span>
+                  <span class="onoffswitch-switch3"></span>
+                </label>
+              </div>
+
+              <div class="onoffswitch4">
+                <input type="checkbox" name="onoffswitch4" class="onoffswitch-checkbox4" id="myonoffswitch4" tabindex="0">
+                <label class="onoffswitch-label4" for="myonoffswitch4">
+                  <span class="onoffswitch-inner4"></span>
+                  <span class="onoffswitch-switch4"></span>
+                </label>
+              </div>
+
+              <div class="onoffswitch5">
+                 <input type="checkbox" name="onoffswitch5" class="onoffswitch-checkbox5" id="myonoffswitch5" tabindex="0">
+                 <label class="onoffswitch-label5" for="myonoffswitch5">
+                   <span class="onoffswitch-inner5"></span>
+                   <span class="onoffswitch-switch5"></span>
+                 </label>
+              </div>
+
+              <div class="onoffswitch6">
+                  <input type="checkbox" name="onoffswitch6" class="onoffswitch-checkbox6" id="myonoffswitch6" tabindex="0">
+                  <label class="onoffswitch-label6" for="myonoffswitch6">
+                    <span class="onoffswitch-inner6"></span>
+                    <span class="onoffswitch-switch6"></span>
+                  </label>
+              </div>
+
+            </div >  
+        
+
+
+            <!-- 電費單、地圖、甜甜圈 -------------------------------------------------------------------------------------------------------------------->
+
+            <div class="p1">
+              <img class="icon1" src="./svg/grzl.svg" width="210px" alt="">
+              <div class="p1p">
+                <img class="ggg" src="./svg/gbzl.svg" width="210px" alt="">
+              </div>
+            </div>
+      
+            <div class="p2">
+              <img class="icon2" src="./svg/dbicon.svg" width="210px" alt="">
+              <div class="p2p">
+                <img class="dbdb" src="./svg/db.svg" width="210px" alt="">
+              </div>
+            </div>
+      
+            <div class="p3">
+              <img class="icon3" src="./svg/grzl.svg" width="210px" alt="">
+              <div class="p3p">
+                <img class="udud" src="./svg/udud.svg" width="210px" alt="">
+              </div>
+            </div>
+      
+            <div class="p4">
+              <img class="icon4" src="./svg/grzl.svg" width="210px" alt="">
+              <div class="p4p">
+                <img class="sfsf" src="./svg/sfgr.svg" width="210px" alt="">
+              </div>
+            </div>
+
+        <div class="midle">
+          
+           <!-- 電費單月曆 -------------------------------------------------------------------------------------------------------------------->
+           <p class="ww4"><a href="#ex1" rel="modal:open">Oi</a></p>
+
+           <div class="money"><img src="./svg/money.svg" alt=""></div>
+
+           <div class="moneycalendar" ><img src="./svg/calender.svg" alt=""></div>
+ 
+            <!-- 電費單度數長條圖 -------------------------------------------------------------------------------------------------------------------->
+            <span class="fk15">去年同期</span>
+            <span class="fk16">本期</span>
+            <span class="fk17">去年下期</span>
+
+           <!-- 隱形切換鍵 -------------------------------------------------------------------------------------------------------------------->
+             <ul class="tab-list2">
+                <li class="tab-item2 active2"></li>
+                <li class="tab-item2"></li>
+              </ul>
+
+            <!-- tab-item2內容 -------------------------------------------------------------------------------------------------------------------->
+              <ul class="content-list2">
+ 
+                <!-- 總電數 -------------------------------------------------------------------------------------------------------------------->
+                  <li class="content-item2 show2"> 
+
+                     <!-- 長條圖1 -------------------------------------------------------------------------------------------------------------------->
+                    <div id="barchart_values" style="width: 900px; height: 300px;"></div>
+                  </li>
+                 
+                  <!-- 日平均度數 -------------------------------------------------------------------------------------------------------------------->
+                  <li class="content-item2">
+
+                    <!-- 長條圖2 -------------------------------------------------------------------------------------------------------------------->
+                    <div id="barchart_values2" style="width: 600px; height: 300px;"></div>
+                  </li>
+              </ul>
+
+
+            <!-- 電費單度數切換js -------------------------------------------------------------------------------------------------------------------->
+                <script>
+                $(function() {
+                $('.tab-item2').click(function() {
+                var index = $('.tab-item2').index(this);
+                $('.active2').removeClass('active2');
+                $(this).addClass('active2');
+                $('.content-item2').removeClass('show2').eq(index).addClass('show2');
+                });
+                });
+              </script>
+
+
+
+             <!-- 碳排放左邊數值 -------------------------------------------------------------------------------------------------------------------->
+               <span class="fk18">去年同期</span>
+               <span class="fk19">本期</span>
+               <span class="fk20">去年下期</span>
+
+             <!-- 隱形切換鍵 -------------------------------------------------------------------------------------------------------------------->
+               <ul class="tab-list3">
+                 <li class="tab-item3 active3"></li>
+                 <li class="tab-item3"></li>
+               </ul>
+
+                <!-- tab-item3內容 -------------------------------------------------------------------------------------------------------------------->
+               <ul class="content-list3">
+                  <li class="content-item3 show3"> 
+                     <!-- 長條圖3 -------------------------------------------------------------------------------------------------------------------->
+                     <div id="barchart3" style="width: 600px; height: 300px;"></div>
+                  </li>
+  
+                  <li class="content-item3">
+                    <!-- 長條圖4 -------------------------------------------------------------------------------------------------------------------->
+                    <div id="barchart4" style="width: 400px; height: 300px;"></div>
+                  </li>
+                </ul>
+
+          
+               <!-- 電費單碳排放切換js -------------------------------------------------------------------------------------------------------------------->
+                  <script>
+                    $(function() {
+                    $('.tab-item3').click(function() {
+                    var index = $('.tab-item3').index(this);
+                    $('.active3').removeClass('active3');
+                    $(this).addClass('active3');
+                    $('.content-item3').removeClass('show3').eq(index).addClass('show3');
+                    });
+                    });
+                  </script>
+    
+              <!-- 地圖 -------------------------------------------------------------------------------------------------------------------->
+                 <div id="slider">
+               <ul class="slieder-item-container">
+                 <li class="xx"><a href="#"><img class="b1" src="./svg/worldmapp1.svg" ></a></li>
+                 <li class="xx" ><a href="#"><img class="b3" src="./svg/taiwanmapp1.svg" /></a></li>
+                 <li class="xx" ><a href="#"><img class="b4" src="./svg/worldmapp2.svg" ></a></li>
+                 <li class="xx" ><a href="#"><img class="b2" src="./svg/taiwanmapp2.svg" ></a></li>
+                
+               </ul>
+                <div class="arrow-container">
+                  <span class="left-arrow"><img class="arol" src="./svg/arrowleft.svg" alt=""></span>
+                  <span class="right-arrow"><img class="aror" src="./svg/arrowright.svg" alt=""></span>
+                </div>
+               <div class="indicator-container">
+                <span class="indicator active"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+                
+            </div>
+        </div>
+           
+           
+              <!-- 甜甜圈圖表 -------------------------------------------------------------------------------------------------------------------->
+                 <div class="dou109">
+                   109年
+                 </div>
+                 <div class="doutest1">6%</div>
+                 <div class="doutest2">1.4%</div>
+                 <div class="doutest3">1.8%</div>
+                 <div class="doutest4">13.4%</div>
+                 <div class="doutest5">77.4%</div>
+                 <div class="doutest6">0.9%</div>
+                 <div class="doutest7">12.8%</div>
+                 <div class="doutest8">19.3%</div>
+                 <div class="doutest9">28%</div>
+                 <div class="doutest10">39%</div>
+                  <!-- 甜甜圈1 -------------------------------------------------------------------------------------------------------------------->
+                 <div class="doutitle1"><img src="./svg/doutitle1.svg" alt=""></div>
+                 <div id="donutchart" style="width: 800px; height: 520px;">
+                  
+                </div>
+            
+                  <!-- 甜甜圈2 -------------------------------------------------------------------------------------------------------------------->
+                 <div class="doutitle2"><img src="./svg/doutitle2.svg" alt=""></div>
+                 <div id="donutchart2" style="width: 800px; height: 520px;"></div>
+
+
+
+               <!-- 所有標題切換 -------------------------------------------------------------------------------------------------------------------->
+               <div class="toggleWrapper" id="h">
+                  <input type="checkbox" id="dn" class="dn">
+                  <label for="dn" class="toggle"><span class="toggle__handler"></span></label>
+               </div>
+
+               <div class="toggleWrapper1">
+                  <input type="checkbox" id="dn1" class="dn1">
+                  <label for="dn1" class="toggle1"><span class="toggle__handler1"></span></label>
+               </div>
+
+               <div class="toggleWrapper2">
+                  <input type="checkbox" id="dn2" class="dn2">
+                  <label for="dn2" class="toggle2"><span class="toggle__handler2"></span></label>
+               </div>
+
+               <div class="toggleWrapper3">
+                  <input type="checkbox" id="dn3" class="dn3">
+                  <label for="dn3" class="toggle3"><span class="toggle__handler3"></span></label>
+               </div>
+
+              
+        </div>
+
+    
+
+        <footer>
+          <!-- top scroll to top -------------------------------------------------------------------------------------------------------------------->
+          <script>
+            function ok() { window.scrollTo({
+            top: 0,
+             behavior: 'smooth'
+            });        }
+            </script>
+  
+         <!-- footer -------------------------------------------------------------------------------------------------------------------->
+          <div class="footer">
+            <a class="top" onclick="ok()">
+              
+              <img src="./svg/top.svg" alt=""href=""></a>
+             <div class="phone1"><img src="./svg/phone1.svg" alt=""></div>
+             <div class="address"><img src="./svg/address.svg" alt=""></div>
+              <div class="footertext2">
+                  <p>    總機：02-23651234</p>
+                  <p>    100208 台北市羅斯福三段242號</p>
+                  <p>隱私政策 l 政府網站資料開放宣告</p>
+                  <p>政風檢舉電話：02-23667364</p>
+                  </div>
+             
+               <div class="footericon">
+                <p class="footertext1">聯絡我們</p>
+                <div class="people"><img src="./svg/people.svg" alt=""></div>
+               </div>
+
+               <div class="ytbt">
+                <div class="yt">
+                <img src="./svg/yt.svg" alt=""></div>
+                </div>
+
+                <div class="fbbt">
+               <div class="fb"><img src="./svg/fb.svg" alt=""></div>
+               </div>
+               
+                <div class="igbt">
+               <div class="ig"><img src="./svg/ig.svg" alt=""></div>
+               </div>
+               <div class="qrcode"><img src="./svg/qrcode.svg" alt=""></div>
+               <button class="qc"><a href="https://www.taipower.com.tw/tc/index.aspx">台電官網</a> </button>
+              
+
+               <div class="footerright"><img src="./svg/footerright.svg" alt=""></div>
+              </div>
+         </footer>
+
+</body>
+
+</html>
